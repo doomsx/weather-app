@@ -1,9 +1,10 @@
+import Weather from "./components/Weather"
 
 function App() {
     return (
-        <>
-            <h1 className="text-3xl font-black">Hello World</h1>
-        </>
+        <main className="flex justify-center items-center">
+            <Weather />
+        </main>
     )
 }
 
