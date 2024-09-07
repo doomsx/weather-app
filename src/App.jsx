@@ -2,7 +2,7 @@ import Weather from "./components/Weather"
 
 function App() {
     return (
-        <main className="flex justify-center items-center">
+        <main className="flex justify-center items-center bg-gray-900 h-screen">
             <Weather />
         </main>
     )
