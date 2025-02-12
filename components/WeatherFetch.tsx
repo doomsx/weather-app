@@ -1,8 +1,9 @@
+import { fetchData } from '@/lib/actions'
 import React from 'react'
 
-const API_KEY = process.env.API_KEY
-
-const WeatherFetch = () => {
+const WeatherFetch = async () => {
+    const data = await fetchData("tokyo")
+    console.log(data)
     return (
         <div>WeatherFetch</div>
     )
