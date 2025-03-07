@@ -1,9 +1,18 @@
 import React from 'react'
+import Form from "next/form"
 
-const SearchForm = ({ query = "Manila" }: { query?: string }) => {
-    console.log(query)
+const SearchForm = ({ query }: { query?: string }) => {
     return (
-        <div>SearchForm</div>
+        <Form action='/' scroll={false}>
+            <input
+                name='query'
+                defaultValue={query}
+                className=''
+                placeholder='Enter a City'
+            />
+
+            <input type='submit' value={"submit"} />
+        </Form>
     )
 }
 
