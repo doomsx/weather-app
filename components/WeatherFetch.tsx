@@ -5,7 +5,12 @@ const WeatherFetch = async () => {
     const data = await fetchData("tokyo")
     console.log(data)
     return (
-        <div>WeatherFetch</div>
+        <section>
+            <h1>{data.name}</h1>
+            <p>{data.main.temp} °C</p>
+            <p>{data.main.feels_like} °C</p>
+            <p>{data.main.humidity} °C</p>
+        </section>
     )
 }
 
