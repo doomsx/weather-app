@@ -19,14 +19,50 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
                 </div>
                 <div className="flex gap-5">
                     <div>
-                        <p>Feels Like: {data.main.feels_like} °C</p>
-                        <p>Temperature Min: {data.main.temp_min}</p>
-                        <p>Temperature Max: {data.main.temp_max}</p>
+                        <p>Feels Like:
+                            <span>
+                                {data.main.feels_like} °C
+                            </span>
+                        </p>
+                        <p>Temperature Min:
+                            <span>
+                                {data.main.temp_min}
+                            </span>
+                        </p>
+                        <p>Temperature Max:
+                            <span>
+                                {data.main.temp_max}
+                            </span>
+                        </p>
                     </div>
                     <div>
-                        <p>Humidity: {data.main.humidity} °C</p>
-                        <p>Pressure: {data.main.pressure}</p>
-                        <p>Clouds: {data.clouds.all}</p>
+                        <p>Humidity:
+                            <span>
+                                {data.main.humidity} °C
+                            </span>
+                        </p>
+                        <p>Pressure:
+                            <span>
+                                {data.main.pressure}
+                            </span>
+                        </p>
+                        <p>Clouds:
+                            <span>
+                                {data.clouds.all}
+                            </span>
+                        </p>
+                    </div>
+                    <div>
+                        <p>Wind Speed:
+                            <span>
+                                {data.wind.speed}
+                            </span>
+                        </p>
+                        <p>Wind Degrees:
+                            <span>
+                                {data.wind.deg}
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>
