@@ -17,9 +17,17 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
                     <h1>{data.name}</h1>
                     <p>{data.main.temp} °C</p>
                 </div>
-                <div>
-                    <p>Feels Like: {data.main.feels_like} °C</p>
-                    <p>Humidity: {data.main.humidity} °C</p>
+                <div className="flex gap-5">
+                    <div>
+                        <p>Feels Like: {data.main.feels_like} °C</p>
+                        <p>Temperature Min: {data.main.temp_min}</p>
+                        <p>Temperature Max: {data.main.temp_max}</p>
+                    </div>
+                    <div>
+                        <p>Humidity: {data.main.humidity} °C</p>
+                        <p>Pressure: {data.main.pressure}</p>
+                        <p>Clouds: {data.clouds.all}</p>
+                    </div>
                 </div>
             </div>
         </section>
