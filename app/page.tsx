@@ -4,7 +4,7 @@ import { fetchData } from "@/lib/actions";
 export default async function Home({ searchParams }: { searchParams: Promise<{ query?: string }> }) {
 
     const query = (await searchParams)?.query
-    const data = await fetchData(query)
+    const data = await fetchData("tokyo")
     console.log(data)
     return (
         <section className="px-5 py-3 flex items-center justify-center h-screen flex-col">
@@ -26,19 +26,19 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
 
                         <div className="data_content">
                             <p>Temperature Min</p>
-                            <p>{data.main.temp_min}</p>
+                            <p>{data.main.temp_min} °C</p>
                         </div>
 
                         <div className="data_content">
                             <p>Temperature Max</p>
-                            <p>{data.main.temp_max}</p>
+                            <p>{data.main.temp_max} °C</p>
                         </div>
                     </div>
 
                     <div className="space-y-5">
                         <div className="data_content">
                             <p>Humidity</p>
-                            <p>{data.main.humidity} °C</p>
+                            <p>{data.main.humidity}</p>
                         </div>
 
                         <div className="data_content">
