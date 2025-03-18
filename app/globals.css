@@ -26,3 +26,11 @@ body {
 .data_content {
     @apply flex flex-col justify-center items-center
 }
+
+.data_title {
+    @apply text-xl font-semibold
+}
+
+.data_details {
+    @apply text-lg font-medium
+}

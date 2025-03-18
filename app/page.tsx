@@ -13,53 +13,53 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
             </div>
 
             <div className="flex gap-10 mt-10">
-                <div className="flex flex-col justify-center items-center px-10">
-                    <h1>{data.name}</h1>
-                    <p>{data.main.temp} °C</p>
+                <div className="flex flex-col justify-center items-center px-10 gap-4 border py-20">
+                    <h1 className="text-5xl font-bold">{data.name}</h1>
+                    <p className="text-3xl font-semibold">{data.main.temp} °C</p>
                 </div>
-                <div className="flex gap-10">
+                <div className="flex gap-10 justify-center items-center">
                     <div className="space-y-5">
                         <div className="data_content">
-                            <p>Feels Like</p>
-                            <p>{data.main.feels_like} °C</p>
+                            <p className="data_title">Feels Like</p>
+                            <p className="data_details">{data.main.feels_like} °C</p>
                         </div>
 
                         <div className="data_content">
-                            <p>Temperature Min</p>
-                            <p>{data.main.temp_min} °C</p>
+                            <p className="data_title">Temperature Min</p>
+                            <p className="data_details">{data.main.temp_min} °C</p>
                         </div>
 
                         <div className="data_content">
-                            <p>Temperature Max</p>
-                            <p>{data.main.temp_max} °C</p>
+                            <p className="data_title">Temperature Max</p>
+                            <p className="data_details">{data.main.temp_max} °C</p>
                         </div>
                     </div>
 
                     <div className="space-y-5">
                         <div className="data_content">
-                            <p>Humidity</p>
-                            <p>{data.main.humidity} </p>
+                            <p className="data_title">Humidity</p>
+                            <p className="data_details">{data.main.humidity} </p>
                         </div>
 
                         <div className="data_content">
-                            <p>Pressure:</p>
-                            <p>{data.main.pressure}</p>
+                            <p className="data_title">Pressure:</p>
+                            <p className="data_details">{data.main.pressure}</p>
                         </div>
 
                         <div className="data_content">
-                            <p>Clouds:</p>
-                            <p>{data.clouds.all}</p>
+                            <p className="data_title">Clouds:</p>
+                            <p className="data_details">{data.clouds.all}</p>
                         </div>
                     </div>
 
                     <div className="space-y-5">
                         <div className="data_content">
-                            <p>Wind Speed:</p>
-                            <p>{data.wind.speed}</p>
+                            <p className="data_title">Wind Speed:</p>
+                            <p className="data_details">{data.wind.speed}</p>
                         </div>
                         <div className="data_content">
-                            <p>Wind Degrees:</p>
-                            <p>{data.wind.deg}</p>
+                            <p className="data_title">Wind Degrees:</p>
+                            <p className="data_details">{data.wind.deg}</p>
                         </div>
                     </div>
                 </div>
