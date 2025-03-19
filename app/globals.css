@@ -34,3 +34,11 @@ body {
 .data_details {
     @apply text-lg font-medium
 }
+
+.search-btn {
+    @apply size-[50px] rounded-full bg-black flex justify-center items-center;
+}
+
+.search-input {
+    @apply flex-1 font-bold placeholder:font-semibold placeholder:text-black w-full h-auto outline-none border rounded-full px-5 py-2
+}
