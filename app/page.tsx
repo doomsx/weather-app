@@ -17,14 +17,17 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
             <div>
                 <SearchForm query={query} />
             </div>
-            <p className="text-5xl text-bold text-red-600 mt-10 uppercase">{error}</p>
+            {error &&
+                <p className="text-4xl font-bold text-red-600 mt-10 uppercase">{error}</p>
+            }
+
             {!error && data &&
-                <div className="flex gap-0 mt-10">
-                    <div className="flex flex-col justify-center items-center px-10 gap-4 border py-20">
+                <div className="flex gap-0 mt-5">
+                    <div className="flex flex-col justify-center items-center px-10 gap-4 border-l border-t border-b rounded-l-2xl py-20">
                         <h1 className="text-5xl font-bold">{data.name}</h1>
                         <p className="text-3xl font-semibold">{data.main.temp} °C</p>
                     </div>
-                    <div className="flex gap-10 justify-center items-center border px-10">
+                    <div className="flex gap-10 justify-center items-center border rounded-r-2xl px-10">
                         <div className="space-y-5">
                             <div className="data_content">
                                 <p className="data_title">Feels Like</p>
