@@ -27,7 +27,7 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
-                <main>
+                <main className="bg-[url(/bg.jpg)] bg-center bg-cover">
                     {children}
                 </main>
             </body>

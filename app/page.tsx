@@ -13,7 +13,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
     }
 
     return (
-        <section className="px-5 py-3 flex items-center justify-center h-screen flex-col">
+        <section className="px-5 py-3 flex items-center justify-center h-screen flex-col ">
             <div>
                 <SearchForm query={query} />
             </div>
@@ -22,10 +22,10 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
             }
 
             {!error && data &&
-                <div className="flex gap-0 mt-5">
+                <div className="flex gap-0 mt-5 backdrop-blur-sm">
                     <div className="flex flex-col justify-center items-center px-10 gap-4 border-l border-t border-b rounded-l-2xl py-20">
-                        <h1 className="text-5xl font-bold">{data.name}</h1>
-                        <p className="text-3xl font-semibold">{data.main.temp} °C</p>
+                        <h1 className="text-5xl font-bold text-gray-50">{data.name}</h1>
+                        <p className="text-3xl font-semibold text-gray-50">{data.main.temp} °C</p>
                     </div>
                     <div className="flex gap-10 justify-center items-center border rounded-r-2xl px-10">
                         <div className="space-y-5">
