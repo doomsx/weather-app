@@ -48,28 +48,28 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ q
                         <div className="space-y-5">
                             <div className="data_content">
                                 <p className="data_title">Humidity</p>
-                                <p className="data_details">{data.main.humidity} </p>
+                                <p className="data_details">{data.main.humidity}%</p>
                             </div>
 
                             <div className="data_content">
                                 <p className="data_title">Pressure:</p>
-                                <p className="data_details">{data.main.pressure}</p>
+                                <p className="data_details">{data.main.pressure} hPa</p>
                             </div>
 
                             <div className="data_content">
                                 <p className="data_title">Clouds:</p>
-                                <p className="data_details">{data.clouds.all}</p>
+                                <p className="data_details">{data.clouds.all}%</p>
                             </div>
                         </div>
 
                         <div className="space-y-5">
                             <div className="data_content">
                                 <p className="data_title">Wind Speed:</p>
-                                <p className="data_details">{data.wind.speed}</p>
+                                <p className="data_details">{data.wind.speed} m/s</p>
                             </div>
                             <div className="data_content">
                                 <p className="data_title">Wind Degrees:</p>
-                                <p className="data_details">{data.wind.deg}</p>
+                                <p className="data_details">{data.wind.deg}°</p>
                             </div>
                         </div>
                     </div>
