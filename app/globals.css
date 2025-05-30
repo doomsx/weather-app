@@ -28,17 +28,17 @@ body {
 }
 
 .data_title {
-    @apply text-xl font-semibold text-gray-50
+    @apply text-base md:text-xl font-semibold text-gray-50
 }
 
 .data_details {
-    @apply text-lg font-medium text-gray-50
+    @apply text-base md:text-lg font-medium text-gray-50
 }
 
 .search-btn {
-    @apply size-[50px] rounded-full bg-black flex justify-center items-center;
+    @apply size-8 md:size-[50px] rounded-full bg-black flex justify-center items-center;
 }
 
 .search-input {
-    @apply flex-1 font-bold placeholder:font-semibold placeholder:text-gray-200 w-full h-auto outline-none border rounded-full px-5 py-2 text-white backdrop-blur-sm
+    @apply flex-1 font-bold placeholder:font-semibold placeholder:text-gray-200 w-full h-auto outline-none border rounded-full px-3 py-1 md:px-5 md:py-2 text-white backdrop-blur-sm
 }
